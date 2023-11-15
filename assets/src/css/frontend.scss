@@ -1,0 +1,59 @@
+.modal-select-lang{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 30px);
+  max-width: 360px;
+  background: #fff;
+  padding:  50px 40px;
+  z-index: 999;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 25px;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  .msl-title{
+    text-align: center;
+    font: normal 600 28px/35px Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  }
+  .msl-select{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+    padding-top:  25px;
+    a, button{
+      text-transform: uppercase !important;
+      outline: none !important;
+      border: none !important;
+      background: none !important;
+      font: normal 600 18px/22px  Arial, 'Helvetica Neue', Helvetica, sans-serif;
+      color: #333;
+      text-decoration: none;
+      padding:  0 !important;
+      margin: 0 !important;
+    }
+    button{
+      color: #9d1d1d !important;
+    }
+  }
+}
+@media(max-width: 998px){
+  .modal-select-lang{
+    .msl-title{
+      font: normal 600 20px/30px Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    }
+    .msl-select{
+      padding-top:  15px;
+      a, button{
+        font: normal 600 16px/20px  Arial, 'Helvetica Neue', Helvetica, sans-serif;
+      }
+    }
+  }
+}
