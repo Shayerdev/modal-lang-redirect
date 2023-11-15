@@ -5,7 +5,7 @@
  * Plugin URI: https://github.com/Shayerdev/plugin-cpamatica-autoposts/tree/main
  * Description: Plugin get component modal for redirect to another page
  * Version: 1.0
- * Requires PHP: 7.4
+ * Requires PHP: 5.6
  * Author: Shayer Developer
  * Text Domain: example.com
  * Domain Path: /src/lang

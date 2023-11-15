@@ -1,5 +1,8 @@
 <?php
 
+    if(isset($_GET['lang']))
+        return
+
     $modalData = $params['modalData'];
     $postId = $params['postId'];
     $attr = $params['attr'];
@@ -12,9 +15,9 @@
     <div class="msl-select">
         <?php $i = 0; foreach ($relationPage as $page => $key){ ?>
             <?php if((int)$key === (int)$postId){?>
-                <button data-action="close-mlt"><?php echo $relationLang[$i]?></button>
+                <button class="btn btn-primary" data-action="close-mlt"><?php echo $relationLang[$i]?></button>
             <?php } else { ?>
-                <a href="<?php echo get_the_permalink($key)?>"><?php echo $relationLang[$i]?></a>
+                <a class="btn btn-primary" href="<?php echo get_the_permalink($key)?>?lang=check"><?php echo $relationLang[$i]?></a>
             <?php } ?>
         <?php $i++; } ?>
     </div>

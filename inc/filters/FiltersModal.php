@@ -11,7 +11,7 @@ class FiltersModal
     public function title()
     {
         add_filter(FILTER_NAME_MODAL_LABEL, function ($modalData) {
-            $modalData['title_modal'] = __('Будь ласка, оберіть зручну мову <br> Please select your preferred language.', MLR_LOCALE);
+            $modalData['title_modal'] = 'Будь ласка, оберіть зручну мову <br> <span class="decor">Please select your preferred language.</span>';
             return $modalData;
         });
     }
